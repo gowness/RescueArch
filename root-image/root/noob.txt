@@ -1,0 +1,22 @@
+Quick arch noob referance.
+
+to add stat ip's manually. Edit /etc/rc.conf like this, substituting your own values for the IP address, netmask, broadcast, and gateway:
+interface=eth0
+address=192.168.0.2
+netmask=255.255.255.0
+broadcast=192.168.1.255
+gateway=192.168.22.1
+
+then restart the network service. 
+
+
+Restarting Services. 
+
+/etc/rc.d/<service> 
+
+common services: 
+network
+sshd
+httpd
+mysqld
+ntpd
